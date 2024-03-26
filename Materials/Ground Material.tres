@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://hjacumijaur7"]
+
+[ext_resource type="Texture2D" uid="uid://dqa5d8vvdj2va" path="res://Assets/Textures/ground.png" id="1_5ovcr"]
+[ext_resource type="Texture2D" uid="uid://ckve4jhcsce3i" path="res://Assets/Textures/ground_n.png" id="2_jxdar"]
+
+[resource]
+albedo_texture = ExtResource("1_5ovcr")
+normal_enabled = true
+normal_scale = 1.2
+normal_texture = ExtResource("2_jxdar")
+uv1_scale = Vector3(3, 3, 3)
+texture_filter = 2

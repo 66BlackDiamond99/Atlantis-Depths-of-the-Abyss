@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://etbovsmhc481"]
+
+[ext_resource type="Texture2D" uid="uid://52bn4g548u55" path="res://Assets/Textures/wall.png" id="1_li1pe"]
+[ext_resource type="Texture2D" uid="uid://ddc8pexy7wfif" path="res://Assets/Textures/wall_n.png" id="2_ufv4p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gula3"]
+albedo_texture = ExtResource("1_li1pe")
+metallic_specular = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_ufv4p")
+uv1_scale = Vector3(6, 4, 4)
+texture_filter = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_6frow"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s8w0m"]
+
+[node name="Wall" type="StaticBody3D"]
+
+[node name="GFX" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_gula3")
+mesh = SubResource("BoxMesh_6frow")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_s8w0m")

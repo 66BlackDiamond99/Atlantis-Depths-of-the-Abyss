@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://2y8tgwjcq6mb"]
+
+[ext_resource type="Texture2D" uid="uid://bb7ml66x8ayso" path="res://Assets/Sprites/Decoration/ruins.png" id="1_e3xnu"]
+[ext_resource type="Texture2D" uid="uid://br4yit2w0y1ob" path="res://Assets/Sprites/Decoration/ruins_n.png" id="2_h2yf5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mq2nl"]
+transparency = 1
+albedo_texture = ExtResource("1_e3xnu")
+metallic_specular = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_h2yf5")
+rim = 0.5
+rim_tint = 0.65
+heightmap_scale = 4.975
+uv1_offset = Vector3(0, 0.03, 0)
+texture_filter = 4
+billboard_mode = 2
+billboard_keep_scale = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6ia4h"]
+radius = 0.340312
+height = 1.46473
+
+[node name="Statue" type="StaticBody3D"]
+
+[node name="Statue" type="Sprite3D" parent="."]
+material_override = SubResource("StandardMaterial3D_mq2nl")
+offset = Vector2(0, 8)
+pixel_size = 0.005
+texture_filter = 2
+texture = ExtResource("1_e3xnu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_6ia4h")
