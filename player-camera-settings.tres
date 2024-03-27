@@ -4,7 +4,6 @@
 exposure_multiplier = 0.25
 auto_exposure_scale = 0.01
 auto_exposure_speed = 0.01
-dof_blur_far_enabled = true
 dof_blur_far_distance = 3.5
 dof_blur_far_transition = 1.75
 dof_blur_near_distance = 1.25

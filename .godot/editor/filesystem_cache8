@@ -1,6 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711544444
+::res://::1711577173
+player-camera-settings.tres::CameraAttributesPractical::1039726849741501114::1711575845::0::1::::<><>::
 README.md::TextFile::-1::1711383775::0::1::::<><>::
+::res://3D/::1711572827
+portal.glb::PackedScene::9006318914469996315::1711572826::1711572827::1::::<><>::uid://go3nuxcvvhv6::::res://3D/portal_AncientCosmicPortal-0-Portal_Stairs.png<>uid://bkyintcy2jcov::::res://3D/portal_AncientCosmicPortal-2-Portal_Arch.png
+portal_AncientCosmicPortal-0-Portal_Stairs.png::CompressedTexture2D::451758727620528381::1711572827::1711572827::1::::<><>::
+portal_AncientCosmicPortal-2-Portal_Arch.png::CompressedTexture2D::3138364139593904241::1711572827::1711572827::1::::<><>::
 ::res://Assets/::1711544010
 ::res://Assets/Sprites/::1711493427
 ::res://Assets/Sprites/Decoration/::1711495829
@@ -27,19 +32,110 @@ ground_n.png::CompressedTexture2D::5518376876234880384::1711493550::1711493820::
 ocean hdr.png::CompressedTexture2D::5434878475935558009::1711544002::1711544015::1::::<><>::
 wall.png::CompressedTexture2D::2161488974663233922::1711493550::1711494351::1::::<><>::
 wall_n.png::CompressedTexture2D::7375988031929372441::1711493550::1711494359::1::::<><>::
-::res://Materials/::1711544432
-Ground Material.tres::StandardMaterial3D::509905946220764482::1711496833::0::1::::<><>::uid://dqa5d8vvdj2va::::res://Assets/Textures/ground.png<>uid://ckve4jhcsce3i::::res://Assets/Textures/ground_n.png
-Wall Material.tres::StandardMaterial3D::4384653484191179566::1711541804::0::1::::<><>::uid://52bn4g548u55::::res://Assets/Textures/wall.png<>uid://ddc8pexy7wfif::::res://Assets/Textures/wall_n.png
-world_environment.tres::Environment::2516459224402323393::1711544432::0::1::::<><>::uid://cjoxwisvcpd26::::res://Assets/Textures/ocean hdr.png
-::res://MeshLib/::1711541804
-mesh_lib.tscn::PackedScene::6670408610780936266::1711497463::0::1::::<><>::uid://hjacumijaur7::::res://Materials/Ground Material.tres<>uid://b3p7uqh702mcs::::res://Materials/Wall Material.tres<>uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
-World Blocks.tres::MeshLibrary::6106958994303789250::1711541804::0::1::::<><>::uid://hjacumijaur7::::res://Materials/Ground Material.tres<>uid://b3p7uqh702mcs::::res://Materials/Wall Material.tres<>uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
+::res://Materials/::1711577117
+Ground Material.tres::StandardMaterial3D::509905946220764482::1711551107::0::1::::<><>::uid://dqa5d8vvdj2va::::res://Assets/Textures/ground.png<>uid://ckve4jhcsce3i::::res://Assets/Textures/ground_n.png
+Wall Material.tres::StandardMaterial3D::4384653484191179566::1711575845::0::1::::<><>::uid://52bn4g548u55::::res://Assets/Textures/wall.png<>uid://ddc8pexy7wfif::::res://Assets/Textures/wall_n.png
+world_environment.tres::Environment::2516459224402323393::1711577117::0::1::::<><>::uid://cjoxwisvcpd26::::res://Assets/Textures/ocean hdr.png
+::res://MeshLib/::1711575845
+mesh_lib.tscn::PackedScene::6670408610780936266::1711567093::0::1::::<><>::uid://hjacumijaur7::::res://Materials/Ground Material.tres<>uid://b3p7uqh702mcs::::res://Materials/Wall Material.tres<>uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
+World Blocks.tres::MeshLibrary::6106958994303789250::1711575845::0::1::::<><>::uid://hjacumijaur7::::res://Materials/Ground Material.tres<>uid://b3p7uqh702mcs::::res://Materials/Wall Material.tres<>uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
 ::res://Music/::1711383657
-::res://Prefabs/::1711496543
+::res://Prefabs/::1711577118
 ground.tscn::PackedScene::3043955091182951376::1711496530::0::1::::<><>::uid://dqa5d8vvdj2va::::res://Assets/Textures/ground.png<>uid://ckve4jhcsce3i::::res://Assets/Textures/ground_n.png
+mini_sea_grass.tscn::PackedScene::1556965495412209816::1711571955::0::1::::<><>::uid://i400fcrrcxnd::::res://Prefabs/SeaGrass.tscn<>uid://dyba00jcv4wrv::::res://Assets/Sprites/Decoration/sea grass.png
+portal.tscn::PackedScene::7261054570778947057::1711577117::0::1::::<><>::uid://go3nuxcvvhv6::::res://3D/portal_AncientCosmicPortal-0-Portal_Stairs.png<>uid://bkyintcy2jcov::::res://3D/portal_AncientCosmicPortal-2-Portal_Arch.png<>uid://cctqcpvxsgrk0::::res://VFX/twirl_01.png<>uid://cbn6d0bqycyt3::::res://VFX/star_09.png<>uid://m2cnyvpxoud8::::res://VFX/circle_05.png
+SeaGrass.tscn::PackedScene::622940540140361689::1711567093::0::1::::<><>::uid://dyba00jcv4wrv::::res://Assets/Sprites/Decoration/sea grass.png
 statue.tscn::PackedScene::1946681784707849941::1711496543::0::1::::<><>::uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
 wall.tscn::PackedScene::320065401338225520::1711496535::0::1::::<><>::uid://52bn4g548u55::::res://Assets/Textures/wall.png<>uid://ddc8pexy7wfif::::res://Assets/Textures/wall_n.png
-::res://Scenes/::1711544432
-atlantis_labrynth.tscn::PackedScene::5253132270816219886::1711544432::0::1::::<><>::uid://ctaiytde4ojp7::::res://MeshLib/World Blocks.tres<>uid://bb38yloqxrspd::::res://Materials/world_environment.tres
+::res://Scenes/::1711571955
+atlantis_labrynth.gd::GDScript::-1::1711569096::0::1::::<>Node3D<>::
+atlantis_labrynth.tscn::PackedScene::5253132270816219886::1711571955::0::1::::<><>::uid://ctaiytde4ojp7::::res://MeshLib/World Blocks.tres<>res://Scenes/atlantis_labrynth.gd<>uid://wgg82lmuk14g::::res://Prefabs/mini_sea_grass.tscn<>uid://bb38yloqxrspd::::res://Materials/world_environment.tres<>res://Shaders/under-water-shader.gdshader<>res://Shaders/vignette.gdshader<>uid://dy2t1gdblsdxg::::res://Scenes/player.tscn<>res://Shaders/GodRays.gdshader<>uid://b44vfishejd4s::::res://Assets/Textures/dawn-waves-underwater-ocean-3d-render_644474-660.jpg<>uid://i400fcrrcxnd::::res://Prefabs/SeaGrass.tscn
+player.gd::GDScript::-1::1711555231::0::1::::<>Node3D<>::
+player.tscn::PackedScene::8900732871091145408::1711571955::0::1::::<><>::res://Scenes/player.gd<>uid://o2wfcuplaxy5::::res://player-camera-settings.tres
 ::res://SFX/::1711383652
-::res://VFX/::1711383647
+::res://Shaders/::1711577118
+GodRays.gdshader::Shader::-1::1711577118::0::1::::<><>::
+SeaGrass.gdshader::Shader::-1::1711577118::0::1::::<><>::
+under-water-shader.gdshader::Shader::-1::1711577118::0::1::::<><>::
+vignette.gdshader::Shader::-1::1711577118::0::1::::<><>::
+::res://VFX/::1711576692
+circle_01.png::CompressedTexture2D::8776195171512979697::1711572974::1711572979::1::::<><>::
+circle_02.png::CompressedTexture2D::7935948530104376230::1711572974::1711572979::1::::<><>::
+circle_03.png::CompressedTexture2D::6869765800403217588::1711572974::1711573075::1::::<><>::
+circle_04.png::CompressedTexture2D::8946025315980200795::1711572974::1711572979::1::::<><>::
+circle_05.png::CompressedTexture2D::898150266036435927::1711572974::1711576692::1::::<><>::
+dirt_01.png::CompressedTexture2D::2178093863538454857::1711572974::1711572978::1::::<><>::
+dirt_02.png::CompressedTexture2D::1836081859426154179::1711572974::1711572978::1::::<><>::
+dirt_03.png::CompressedTexture2D::7129038397670951521::1711572974::1711572978::1::::<><>::
+fire_01.png::CompressedTexture2D::5441072073058828647::1711572974::1711572978::1::::<><>::
+fire_02.png::CompressedTexture2D::2592514010859557185::1711572974::1711572978::1::::<><>::
+flame_01.png::CompressedTexture2D::14566016867608856::1711572974::1711572978::1::::<><>::
+flame_02.png::CompressedTexture2D::5122766308885732505::1711572974::1711572978::1::::<><>::
+flame_03.png::CompressedTexture2D::9126425753284007155::1711572974::1711572978::1::::<><>::
+flame_04.png::CompressedTexture2D::6803930636051854178::1711572974::1711572978::1::::<><>::
+flame_05.png::CompressedTexture2D::4854539878552348555::1711572974::1711572978::1::::<><>::
+flame_06.png::CompressedTexture2D::5346107823327346419::1711572974::1711572978::1::::<><>::
+flare_01.png::CompressedTexture2D::5260790416042167840::1711572974::1711576685::1::::<><>::
+light_01.png::CompressedTexture2D::2750024170988755992::1711572974::1711572978::1::::<><>::
+light_02.png::CompressedTexture2D::3661520062332567865::1711572974::1711572978::1::::<><>::
+light_03.png::CompressedTexture2D::7269138008169090971::1711572974::1711574533::1::::<><>::
+magic_01.png::CompressedTexture2D::5718542017139609782::1711572974::1711572980::1::::<><>::
+magic_02.png::CompressedTexture2D::5139320997976847526::1711572974::1711572980::1::::<><>::
+magic_03.png::CompressedTexture2D::2456661670979816175::1711572974::1711574536::1::::<><>::
+magic_04.png::CompressedTexture2D::3141505007920345604::1711572974::1711572980::1::::<><>::
+magic_05.png::CompressedTexture2D::659993138355476219::1711572974::1711572979::1::::<><>::
+muzzle_01.png::CompressedTexture2D::6973553561438856810::1711572974::1711572979::1::::<><>::
+muzzle_02.png::CompressedTexture2D::935986973482054172::1711572974::1711572979::1::::<><>::
+muzzle_03.png::CompressedTexture2D::6601901534410123407::1711572974::1711572979::1::::<><>::
+muzzle_04.png::CompressedTexture2D::8652870426395970879::1711572974::1711572979::1::::<><>::
+muzzle_05.png::CompressedTexture2D::1144065879940470094::1711572974::1711572979::1::::<><>::
+scorch_01.png::CompressedTexture2D::1540065795937119178::1711572974::1711572979::1::::<><>::
+scorch_02.png::CompressedTexture2D::2182628999651801277::1711572974::1711572979::1::::<><>::
+scorch_03.png::CompressedTexture2D::6055543600062978464::1711572974::1711574524::1::::<><>::
+scratch_01.png::CompressedTexture2D::5960446808626381808::1711572974::1711572979::1::::<><>::
+slash_01.png::CompressedTexture2D::4631332118005339230::1711572974::1711572979::1::::<><>::
+slash_02.png::CompressedTexture2D::360857318663220161::1711572974::1711572979::1::::<><>::
+slash_03.png::CompressedTexture2D::620256276102791852::1711572974::1711572979::1::::<><>::
+slash_04.png::CompressedTexture2D::5596721025091902621::1711572974::1711572979::1::::<><>::
+smoke_01.png::CompressedTexture2D::1696135843257489646::1711572974::1711572979::1::::<><>::
+smoke_02.png::CompressedTexture2D::6464648611855577144::1711572974::1711572979::1::::<><>::
+smoke_03.png::CompressedTexture2D::6137420735022678473::1711572974::1711572977::1::::<><>::
+smoke_04.png::CompressedTexture2D::2905924829297632123::1711572974::1711572977::1::::<><>::
+smoke_05.png::CompressedTexture2D::6574754687708104378::1711572974::1711572977::1::::<><>::
+smoke_06.png::CompressedTexture2D::6721085460006224864::1711572974::1711572977::1::::<><>::
+smoke_07.png::CompressedTexture2D::8210642992444522790::1711572974::1711572976::1::::<><>::
+smoke_08.png::CompressedTexture2D::6581919133155444586::1711572974::1711572976::1::::<><>::
+smoke_09.png::CompressedTexture2D::9210034042258010260::1711572974::1711572976::1::::<><>::
+smoke_10.png::CompressedTexture2D::4903178274760650223::1711572974::1711572976::1::::<><>::
+spark_01.png::CompressedTexture2D::2264070743982174453::1711572974::1711572976::1::::<><>::
+spark_02.png::CompressedTexture2D::282612617646887435::1711572974::1711574546::1::::<><>::
+spark_03.png::CompressedTexture2D::8885339621310880012::1711572974::1711572976::1::::<><>::
+spark_04.png::CompressedTexture2D::8106559615924811043::1711572975::1711572976::1::::<><>::
+spark_05.png::CompressedTexture2D::4393494571310422985::1711572975::1711572976::1::::<><>::
+spark_06.png::CompressedTexture2D::568561975784179704::1711572975::1711572976::1::::<><>::
+spark_07.png::CompressedTexture2D::5824531847580684105::1711572975::1711572976::1::::<><>::
+star_01.png::CompressedTexture2D::3929810953614902039::1711572975::1711576202::1::::<><>::
+star_02.png::CompressedTexture2D::8752909966632284766::1711572975::1711576193::1::::<><>::
+star_03.png::CompressedTexture2D::5625250384903036428::1711572975::1711572976::1::::<><>::
+star_04.png::CompressedTexture2D::8495771227687143863::1711572975::1711576267::1::::<><>::
+star_05.png::CompressedTexture2D::7434126392512523002::1711572975::1711576316::1::::<><>::
+star_06.png::CompressedTexture2D::6823038556437419761::1711572975::1711574552::1::::<><>::
+star_07.png::CompressedTexture2D::9156619185151472797::1711572975::1711574563::1::::<><>::
+star_08.png::CompressedTexture2D::3309571042417117077::1711572975::1711576307::1::::<><>::
+star_09.png::CompressedTexture2D::4871756021372190546::1711572975::1711573764::1::::<><>::
+symbol_01.png::CompressedTexture2D::5733039154720039276::1711572975::1711576210::1::::<><>::
+symbol_02.png::CompressedTexture2D::7018980939738450581::1711572975::1711572977::1::::<><>::
+trace_01.png::CompressedTexture2D::2750782439944551268::1711572975::1711572977::1::::<><>::
+trace_02.png::CompressedTexture2D::6542930034427090630::1711572975::1711572977::1::::<><>::
+trace_03.png::CompressedTexture2D::2316505632256784829::1711572975::1711572977::1::::<><>::
+trace_04.png::CompressedTexture2D::434124440085948647::1711572975::1711572977::1::::<><>::
+trace_05.png::CompressedTexture2D::8944663086936691939::1711572975::1711572977::1::::<><>::
+trace_06.png::CompressedTexture2D::5936252817486981653::1711572975::1711572977::1::::<><>::
+trace_07.png::CompressedTexture2D::9197273706011438364::1711572975::1711572977::1::::<><>::
+twirl_01.png::CompressedTexture2D::4953418096821945377::1711572975::1711573173::1::::<><>::
+twirl_02.png::CompressedTexture2D::8692769552615886364::1711572975::1711572977::1::::<><>::
+twirl_03.png::CompressedTexture2D::955167167866960483::1711572975::1711572977::1::::<><>::
+window_01.png::CompressedTexture2D::3601119768740352628::1711572975::1711572977::1::::<><>::
+window_02.png::CompressedTexture2D::5514997202986307687::1711572975::1711572977::1::::<><>::
+window_03.png::CompressedTexture2D::6314563495728750953::1711572975::1711572977::1::::<><>::
+window_04.png::CompressedTexture2D::6264883356450184101::1711572974::1711572977::1::::<><>::

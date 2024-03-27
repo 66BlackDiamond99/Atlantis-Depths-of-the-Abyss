@@ -1,16 +1,13 @@
 res://Materials/world_environment.tres
-res://Scenes/atlantis_labrynth.tscn
+res://Prefabs/portal.tscn
 res://Materials/Wall Material.tres
 res://MeshLib/World Blocks.tres
-res://Shaders/vignette.gdshader
 res://Shaders/under-water-shader.gdshader
+res://Shaders/vignette.gdshader
 res://player-camera-settings.tres
-res://Scenes/player.tscn
-res://Scenes/player.gd
-res://MeshLib/mesh_lib.tscn
-res://Materials/Ground Material.tres
 res://Shaders/GodRays.gdshader
 res://Shaders/SeaGrass.gdshader
-res://Prefabs/SeaGrass.tscn
-res://Scenes/atlantis_labrynth.gd
+res://Scenes/atlantis_labrynth.tscn
 res://Prefabs/mini_sea_grass.tscn
+res://Scenes/player.tscn
+res://Prefabs/health-area.tscn
