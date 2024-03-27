@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711493624
+::res://::1711544444
 README.md::TextFile::-1::1711383775::0::1::::<><>::
-::res://Assets/::1711492978
+::res://Assets/::1711544010
 ::res://Assets/Sprites/::1711493427
-::res://Assets/Sprites/Decoration/::1711493530
+::res://Assets/Sprites/Decoration/::1711495829
 ruins.png::CompressedTexture2D::2523419540309131266::1711493529::1711494819::1::::<><>::
 ruins_n.png::CompressedTexture2D::3640970515272352917::1711493529::1711494861::1::::<><>::
 sea grass.png::CompressedTexture2D::8845904648100855655::1711493529::1711495829::1::::<><>::
@@ -20,12 +20,26 @@ book-sheet.png::CompressedTexture2D::2099222695769858343::1711493436::1711493436
 spear-sheet.png::CompressedTexture2D::487879823213361759::1711493436::1711493436::1::::<><>::
 staff-sheet.png::CompressedTexture2D::6927026148098110086::1711493436::1711493436::1::::<><>::
 sword-sheet.png::CompressedTexture2D::4805166184964871596::1711493436::1711493436::1::::<><>::
-::res://Assets/Textures/::1711494359
+::res://Assets/Textures/::1711544015
+dawn-waves-underwater-ocean-3d-render_644474-660.jpg::CompressedTexture2D::4483048538198426080::1711543181::1711543186::1::::<><>::
 ground.png::CompressedTexture2D::8284112183122515982::1711493550::1711493738::1::::<><>::
 ground_n.png::CompressedTexture2D::5518376876234880384::1711493550::1711493820::1::::<><>::
+ocean hdr.png::CompressedTexture2D::5434878475935558009::1711544002::1711544015::1::::<><>::
 wall.png::CompressedTexture2D::2161488974663233922::1711493550::1711494351::1::::<><>::
 wall_n.png::CompressedTexture2D::7375988031929372441::1711493550::1711494359::1::::<><>::
+::res://Materials/::1711544432
+Ground Material.tres::StandardMaterial3D::509905946220764482::1711496833::0::1::::<><>::uid://dqa5d8vvdj2va::::res://Assets/Textures/ground.png<>uid://ckve4jhcsce3i::::res://Assets/Textures/ground_n.png
+Wall Material.tres::StandardMaterial3D::4384653484191179566::1711541804::0::1::::<><>::uid://52bn4g548u55::::res://Assets/Textures/wall.png<>uid://ddc8pexy7wfif::::res://Assets/Textures/wall_n.png
+world_environment.tres::Environment::2516459224402323393::1711544432::0::1::::<><>::uid://cjoxwisvcpd26::::res://Assets/Textures/ocean hdr.png
+::res://MeshLib/::1711541804
+mesh_lib.tscn::PackedScene::6670408610780936266::1711497463::0::1::::<><>::uid://hjacumijaur7::::res://Materials/Ground Material.tres<>uid://b3p7uqh702mcs::::res://Materials/Wall Material.tres<>uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
+World Blocks.tres::MeshLibrary::6106958994303789250::1711541804::0::1::::<><>::uid://hjacumijaur7::::res://Materials/Ground Material.tres<>uid://b3p7uqh702mcs::::res://Materials/Wall Material.tres<>uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
 ::res://Music/::1711383657
-::res://Scenes/::1711383633
+::res://Prefabs/::1711496543
+ground.tscn::PackedScene::3043955091182951376::1711496530::0::1::::<><>::uid://dqa5d8vvdj2va::::res://Assets/Textures/ground.png<>uid://ckve4jhcsce3i::::res://Assets/Textures/ground_n.png
+statue.tscn::PackedScene::1946681784707849941::1711496543::0::1::::<><>::uid://bb7ml66x8ayso::::res://Assets/Sprites/Decoration/ruins.png<>uid://br4yit2w0y1ob::::res://Assets/Sprites/Decoration/ruins_n.png
+wall.tscn::PackedScene::320065401338225520::1711496535::0::1::::<><>::uid://52bn4g548u55::::res://Assets/Textures/wall.png<>uid://ddc8pexy7wfif::::res://Assets/Textures/wall_n.png
+::res://Scenes/::1711544432
+atlantis_labrynth.tscn::PackedScene::5253132270816219886::1711544432::0::1::::<><>::uid://ctaiytde4ojp7::::res://MeshLib/World Blocks.tres<>uid://bb38yloqxrspd::::res://Materials/world_environment.tres
 ::res://SFX/::1711383652
 ::res://VFX/::1711383647

@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://ckve4jhcsce3i" path="res://Assets/Textures/ground_n.png" id="2_jxdar"]
 
 [resource]
+diffuse_mode = 3
+specular_mode = 1
 albedo_texture = ExtResource("1_5ovcr")
 normal_enabled = true
 normal_scale = 1.2

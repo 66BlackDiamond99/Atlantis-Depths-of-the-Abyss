@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://ddc8pexy7wfif" path="res://Assets/Textures/wall_n.png" id="2_wjo85"]
 
 [resource]
+diffuse_mode = 3
+specular_mode = 1
 albedo_texture = ExtResource("1_j4c4b")
 metallic_specular = 0.0
 normal_enabled = true
