@@ -1,8 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2bgwjqmoiugo"]
+[gd_scene load_steps=14 format=3 uid="uid://c2bgwjqmoiugo"]
 
 [ext_resource type="Material" uid="uid://hjacumijaur7" path="res://Materials/Ground Material.tres" id="1_nfa2u"]
 [ext_resource type="Material" uid="uid://b3p7uqh702mcs" path="res://Materials/Wall Material.tres" id="2_gdyik"]
 [ext_resource type="Texture2D" uid="uid://bb7ml66x8ayso" path="res://Assets/Sprites/Decoration/ruins.png" id="5_q7cue"]
+[ext_resource type="PackedScene" uid="uid://c4dhg81hg77x8" path="res://Prefabs/pillar.tscn" id="5_r8di2"]
+[ext_resource type="PackedScene" uid="uid://dslun100diak5" path="res://Prefabs/statue_3d.tscn" id="6_6sk81"]
 [ext_resource type="Texture2D" uid="uid://br4yit2w0y1ob" path="res://Assets/Sprites/Decoration/ruins_n.png" id="6_df8p1"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tlxwe"]
@@ -62,3 +64,7 @@ mesh = SubResource("BoxMesh_5ugfp")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Statue/StaticBody3D"]
 shape = SubResource("BoxShape3D_qljlt")
+
+[node name="Pillar" parent="." instance=ExtResource("5_r8di2")]
+
+[node name="Statue3D" parent="." instance=ExtResource("6_6sk81")]

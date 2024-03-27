@@ -11,3 +11,6 @@ res://Scenes/atlantis_labrynth.tscn
 res://Prefabs/mini_sea_grass.tscn
 res://Scenes/player.tscn
 res://Prefabs/health-area.tscn
+res://Prefabs/statue_3d.tscn
+res://Prefabs/pillar.tscn
+res://MeshLib/mesh_lib.tscn
