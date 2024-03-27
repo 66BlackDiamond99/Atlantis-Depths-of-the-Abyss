@@ -1,3 +1,5 @@
+AnimationPlayer
+AnimationTree
 Node3D
 OmniLight3D
 MeshInstance3D
@@ -11,4 +13,3 @@ SpotLight3D
 Camera3D
 CharacterBody3D
 CanvasLayer
-WorldEnvironment

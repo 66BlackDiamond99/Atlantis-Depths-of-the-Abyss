@@ -12,3 +12,5 @@ res://Materials/Ground Material.tres
 res://Shaders/GodRays.gdshader
 res://Shaders/SeaGrass.gdshader
 res://Prefabs/SeaGrass.tscn
+res://Scenes/atlantis_labrynth.gd
+res://Prefabs/mini_sea_grass.tscn
