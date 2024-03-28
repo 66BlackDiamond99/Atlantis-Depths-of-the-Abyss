@@ -1,9 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711632346
+::res://::1711638126
 player-camera-settings.tres::CameraAttributesPractical::1039726849741501114::1711632346::0::1::::<><>::
 README.md::TextFile::-1::1711383775::0::1::::<><>::
-::res://3D/::1711637457
-Heart Holder.glb::PackedScene::3663485899789872247::1711635805::1711637463::1::::<><>::uid://dtuoaosmiuaf2::::res://3D/Heart Holder_New-World Project palete.png
+::res://3D/::1711637477
 Heart Of Atlantis.glb::PackedScene::8329543822948165377::1711637457::1711637464::1::::<><>::
 portal.glb::PackedScene::9006318914469996315::1711572826::1711572827::1::::<><>::uid://go3nuxcvvhv6::::res://3D/portal_AncientCosmicPortal-0-Portal_Stairs.png<>uid://bkyintcy2jcov::::res://3D/portal_AncientCosmicPortal-2-Portal_Arch.png
 portal_AncientCosmicPortal-0-Portal_Stairs.png::CompressedTexture2D::451758727620528381::1711572827::1711572827::1::::<><>::
@@ -11,7 +10,6 @@ portal_AncientCosmicPortal-2-Portal_Arch.png::CompressedTexture2D::3138364139593
 props.glb::PackedScene::1537156398749547238::1711624359::1711632157::1::::<><>::uid://ja0dspokmi0i::::res://3D/props_BAKE_Props_grp1_DiffuseMap- 4K.png<>uid://dpus4a3oofkjh::::res://3D/props_BAKE_Props_grp2_DiffuseMap- 4K.png
 props_BAKE_Props_grp1_DiffuseMap- 4K.png::CompressedTexture2D::633223844185477626::1711579541::1711579568::1::::<><>::
 props_BAKE_Props_grp2_DiffuseMap- 4K.png::CompressedTexture2D::8254526998533559465::1711579549::1711579568::1::::<><>::
-Heart Holder_New-World Project palete.png::CompressedTexture2D::8534988436871928037::1711637463::1711637464::1::::<><>::
 ::res://Assets/::1711544010
 ::res://Assets/Sprites/::1711493427
 ::res://Assets/Sprites/Decoration/::1711495829
@@ -38,8 +36,10 @@ ground_n.png::CompressedTexture2D::5518376876234880384::1711493550::1711493820::
 ocean hdr.png::CompressedTexture2D::5434878475935558009::1711544002::1711544015::1::::<><>::
 wall.png::CompressedTexture2D::2161488974663233922::1711493550::1711494351::1::::<><>::
 wall_n.png::CompressedTexture2D::7375988031929372441::1711493550::1711494359::1::::<><>::
-::res://Materials/::1711633655
+::res://Materials/::1711637829
 Ground Material.tres::StandardMaterial3D::509905946220764482::1711551107::0::1::::<><>::uid://dqa5d8vvdj2va::::res://Assets/Textures/ground.png<>uid://ckve4jhcsce3i::::res://Assets/Textures/ground_n.png
+heart-core.tres::StandardMaterial3D::6172722536687514123::1711637818::0::1::::<><>::
+heart-shell.tres::StandardMaterial3D::4020907094032181213::1711637829::0::1::::<><>::
 Wall Material.tres::StandardMaterial3D::4384653484191179566::1711632346::0::1::::<><>::uid://52bn4g548u55::::res://Assets/Textures/wall.png<>uid://ddc8pexy7wfif::::res://Assets/Textures/wall_n.png
 world_environment.tres::Environment::2516459224402323393::1711633655::0::1::::<><>::uid://cjoxwisvcpd26::::res://Assets/Textures/ocean hdr.png
 ::res://MeshLib/::1711633416

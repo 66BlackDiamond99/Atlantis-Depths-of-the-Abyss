@@ -1,5 +1,4 @@
 res://Materials/world_environment.tres
-res://MeshLib/mesh_lib.tscn
 res://Materials/Wall Material.tres
 res://MeshLib/World Blocks.tres
 res://Shaders/under-water-shader.gdshader
@@ -7,5 +6,5 @@ res://Shaders/vignette.gdshader
 res://player-camera-settings.tres
 res://Shaders/GodRays.gdshader
 res://Shaders/SeaGrass.gdshader
-res://Scenes/atlantis_labrynth.tscn
-res://Scenes/player.tscn
+res://Materials/heart-core.tres
+res://Prefabs/heart_holder.tscn
