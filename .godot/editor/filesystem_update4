@@ -1,5 +1,5 @@
 res://Materials/world_environment.tres
-res://Prefabs/portal.tscn
+res://MeshLib/mesh_lib.tscn
 res://Materials/Wall Material.tres
 res://MeshLib/World Blocks.tres
 res://Shaders/under-water-shader.gdshader
@@ -8,9 +8,4 @@ res://player-camera-settings.tres
 res://Shaders/GodRays.gdshader
 res://Shaders/SeaGrass.gdshader
 res://Scenes/atlantis_labrynth.tscn
-res://Prefabs/mini_sea_grass.tscn
 res://Scenes/player.tscn
-res://Prefabs/health-area.tscn
-res://Prefabs/statue_3d.tscn
-res://Prefabs/pillar.tscn
-res://MeshLib/mesh_lib.tscn
