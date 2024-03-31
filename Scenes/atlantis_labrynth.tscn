@@ -7,14 +7,17 @@
 [ext_resource type="Shader" path="res://Shaders/under-water-shader.gdshader" id="3_sexhl"]
 [ext_resource type="Shader" path="res://Shaders/vignette.gdshader" id="4_k6s3c"]
 [ext_resource type="PackedScene" uid="uid://dy2t1gdblsdxg" path="res://Scenes/player.tscn" id="5_7v24r"]
+[ext_resource type="PackedScene" uid="uid://b2jjmap1qqn0l" path="res://Prefabs/med_enemy.tscn" id="5_juykt"]
 [ext_resource type="Shader" path="res://Shaders/GodRays.gdshader" id="6_q0ew4"]
+[ext_resource type="PackedScene" uid="uid://b0nlnh6xw47qw" path="res://Prefabs/hard_enemy.tscn" id="6_xsd7h"]
+[ext_resource type="PackedScene" uid="uid://bycjsa4ei4kag" path="res://Prefabs/hard_enemy_2.tscn" id="7_2rgq3"]
 [ext_resource type="Texture2D" uid="uid://b44vfishejd4s" path="res://Assets/Textures/dawn-waves-underwater-ocean-3d-render_644474-660.jpg" id="7_8fvov"]
 [ext_resource type="PackedScene" uid="uid://i400fcrrcxnd" path="res://Prefabs/SeaGrass.tscn" id="8_68bh1"]
 [ext_resource type="PackedScene" uid="uid://cxvwkbcf0vqdy" path="res://Prefabs/mini_map_tile.tscn" id="8_ifk0r"]
 [ext_resource type="PackedScene" uid="uid://dnqsixogyjstv" path="res://Prefabs/health-area.tscn" id="11_p4ovy"]
 [ext_resource type="PackedScene" uid="uid://ch2lmb1lle2ng" path="res://Prefabs/heart_holder.tscn" id="12_7jnp5"]
-[ext_resource type="Texture2D" uid="uid://csj3btymsodek" path="res://Assets/Sprites/Enemies/jelly-fish-sheet.png" id="13_bsaqp"]
 [ext_resource type="Script" path="res://Scenes/MiniMapCamera.gd" id="14_ooi3o"]
+[ext_resource type="PackedScene" uid="uid://6dq78hmntuak" path="res://Prefabs/enemy.tscn" id="15_p4gkt"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_4cgk1"]
 
@@ -190,48 +193,13 @@ shader_parameter/seed = 5.0
 [sub_resource type="BoxShape3D" id="BoxShape3D_5g8fk"]
 size = Vector3(0.447998, 1.53015, 0.458557)
 
-[sub_resource type="Animation" id="Animation_d3oll"]
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(1, 1, 1), Vector3(1.1, 1, 1), Vector3(1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_juf8j"]
-resource_name = "wapple"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(1, 1, 1), Vector3(1.2, 1, 1), Vector3(1, 1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_teb46"]
-_data = {
-"RESET": SubResource("Animation_d3oll"),
-"wapple": SubResource("Animation_juf8j")
-}
-
 [node name="Atlantis Labrynth" type="Node3D"]
 script = ExtResource("1_wqwfw")
 grass = ExtResource("2_1opxo")
 MinimapCell = ExtResource("8_ifk0r")
+EasyEnemy = ExtResource("15_p4gkt")
+MedEnemy = ExtResource("5_juykt")
+HardEnemy = Array[PackedScene]([ExtResource("6_xsd7h"), ExtResource("7_2rgq3")])
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("1_kdfh7")
@@ -789,19 +757,3 @@ transform = Transform3D(0.42, 0, 0, 0, 0.42, 0, 0, 0, 0.42, 9.5, -0.5, -15)
 
 [node name="portal2" parent="Portals" instance=ExtResource("11_p4ovy")]
 transform = Transform3D(5.50763e-08, 0, -0.42, 0, 0.42, 0, 0.42, 0, 5.50763e-08, 4, -0.5, -42)
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1.2)
-pixel_size = 0.015
-billboard = 1
-shaded = true
-texture_filter = 0
-texture = ExtResource("13_bsaqp")
-hframes = 2
-frame = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite3D"]
-libraries = {
-"": SubResource("AnimationLibrary_teb46")
-}
-autoplay = "RESET"

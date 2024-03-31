@@ -10,9 +10,13 @@ var last_active_tile = null
 @export var MinimapCell :PackedScene
 var ofsset = Vector2i(-1,1)
 
-var easy_cells : Array[Vector3i]
-var med_cells : Array[Vector3i]
-var hard_cells : Array[Vector3i]
+@export var EasyEnemy :PackedScene
+@export var MedEnemy :PackedScene
+@export var HardEnemy :Array[PackedScene]
+
+var number_of_easy_enemies = 4
+var number_of_med_enemies = 2
+var number_of_hard_enemies = 1
 
 func _ready():
 	var ground_cells: Array[Vector3i]
@@ -45,6 +49,7 @@ func create_minimap(ground_cells):
 		tiles.append(tile)
 
 func check_movement(player_pos):
+	enemy_zone(player_pos)
 	var cell = grid_map.local_to_map(grid_map.to_local(player_pos))
 	var pos = grid_map.to_global(grid_map.map_to_local(cell))
 	for tile in tiles:
@@ -54,3 +59,39 @@ func check_movement(player_pos):
 				last_active_tile.active = false
 			last_active_tile = tile
 			break
+
+func enemy_zone(pos):
+	var cell = grid_map.local_to_map(grid_map.to_local(pos))
+	cell.y = 9
+	var cell_type = grid_map.get_cell_item(cell)
+	if cell_type == 5:
+		if number_of_easy_enemies > 0:
+			var chance = randf()
+			if chance >= 0.75:
+				var enemy = EasyEnemy.instantiate()
+				add_child(enemy)
+				enemy.look_at(player.global_position,Vector3.UP)
+				#Engine.time_scale = 0.3
+				enemy.global_position = player.global_position
+				enemy.global_position.z -= 0.5
+				number_of_easy_enemies -= 1
+	if cell_type == 6:
+		if number_of_med_enemies > 0:
+			var chance = randf()
+			if chance >= 0.5:
+				var enemy = MedEnemy.instantiate()
+				add_child(enemy)
+				enemy.global_position = player.global_position
+				enemy.look_at(player.global_position,Vector3.UP)
+				#enemy.global_position.z -= 0.5
+				number_of_med_enemies -= 1
+	if cell_type == 7:
+		if number_of_hard_enemies > 0:
+			var chance = randf()
+			if chance >= 0.35:
+				var enemy = HardEnemy.pick_random().instantiate()
+				add_child(enemy)
+				enemy.global_position = player.global_position
+				enemy.look_at(player.global_position,Vector3.UP)
+				#enemy.global_position.z -= 0.5
+				number_of_hard_enemies -= 1

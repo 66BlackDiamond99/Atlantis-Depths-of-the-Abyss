@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bycjsa4ei4kag"]
+
+[ext_resource type="PackedScene" uid="uid://6dq78hmntuak" path="res://Prefabs/enemy.tscn" id="1_vdfme"]
+[ext_resource type="Texture2D" uid="uid://datt65o2sce1a" path="res://Assets/Sprites/Enemies/shadow-specter-sheet.png" id="2_c722r"]
+
+[node name="HardEnemy2" instance=ExtResource("1_vdfme")]
+
+[node name="Graphics" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.392505, 7.54043e-09)
+texture = ExtResource("2_c722r")

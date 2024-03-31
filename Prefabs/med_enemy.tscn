@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2jjmap1qqn0l"]
+
+[ext_resource type="PackedScene" uid="uid://6dq78hmntuak" path="res://Prefabs/enemy.tscn" id="1_p7yj8"]
+[ext_resource type="Texture2D" uid="uid://cigud70cnl3h7" path="res://Assets/Sprites/Enemies/warior-sheet.png" id="2_pf483"]
+
+[node name="MedEnemy" instance=ExtResource("1_p7yj8")]
+type = 1
+
+[node name="Graphics" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.384546, 7.19252e-09)
+texture = ExtResource("2_pf483")

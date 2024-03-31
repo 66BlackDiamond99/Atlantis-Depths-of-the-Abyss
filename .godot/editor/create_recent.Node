@@ -1,3 +1,8 @@
+CollisionShape3D
+StaticBody3D
+AnimationPlayer
+AnimationTree
+Sprite3D
 MeshInstance3D
 DampedSpringJoint2D
 Node3D
@@ -5,10 +10,5 @@ GridMap
 Camera3D
 SubViewport
 SubViewportContainer
-AnimationPlayer
-Sprite3D
-CollisionShape3D
-StaticBody3D
 XRController3D
 OmniLight3D
-GPUParticles3D

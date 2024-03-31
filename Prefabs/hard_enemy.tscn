@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0nlnh6xw47qw"]
+
+[ext_resource type="PackedScene" uid="uid://6dq78hmntuak" path="res://Prefabs/enemy.tscn" id="1_agl8f"]
+[ext_resource type="Texture2D" uid="uid://difyefftf5qlv" path="res://Assets/Sprites/Enemies/laviathan-sheet.png" id="2_nnxsa"]
+
+[node name="HardEnemy" instance=ExtResource("1_agl8f")]
+type = 2
+
+[node name="Graphics" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.379705, 6.98091e-09)
+texture = ExtResource("2_nnxsa")
