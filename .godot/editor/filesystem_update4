@@ -1,10 +1,16 @@
 res://Materials/world_environment.tres
+res://MeshLib/mesh_lib.tscn
 res://Materials/Wall Material.tres
 res://MeshLib/World Blocks.tres
 res://Shaders/under-water-shader.gdshader
 res://Shaders/vignette.gdshader
 res://player-camera-settings.tres
 res://Shaders/GodRays.gdshader
-res://Shaders/SeaGrass.gdshader
 res://Materials/heart-core.tres
-res://Prefabs/heart_holder.tscn
+res://Shaders/SeaGrass.gdshader
+res://MeshLib/mini_map_grid.tres
+res://Materials/outline_shader_material.gdshader
+res://Scenes/atlantis_labrynth.tscn
+res://Scenes/atlantis_labrynth.gd
+res://Prefabs/mini_map_tile.tscn
+res://Scenes/player.tscn

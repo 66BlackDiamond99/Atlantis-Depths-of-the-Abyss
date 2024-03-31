@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c38bltqc0t4i8"]
+
+[ext_resource type="Shader" path="res://Materials/outline_shader_material.gdshader" id="1_pmguk"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_pmguk")
+shader_parameter/outline_thickness = 1.975
+shader_parameter/color = Color(0.960784, 0.0784314, 0.0784314, 0)

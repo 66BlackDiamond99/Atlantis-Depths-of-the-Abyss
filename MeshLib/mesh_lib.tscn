@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c2bgwjqmoiugo"]
+[gd_scene load_steps=28 format=3 uid="uid://c2bgwjqmoiugo"]
 
 [ext_resource type="Material" uid="uid://hjacumijaur7" path="res://Materials/Ground Material.tres" id="1_nfa2u"]
 [ext_resource type="Material" uid="uid://b3p7uqh702mcs" path="res://Materials/Wall Material.tres" id="2_gdyik"]
@@ -119,6 +119,30 @@ shadow_mesh = SubResource("ArrayMesh_h80se")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_wv4vn"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8gr6"]
+shading_mode = 0
+albedo_color = Color(0, 1, 0.137255, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_ti2m4"]
+material = SubResource("StandardMaterial3D_l8gr6")
+orientation = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tgtxu"]
+shading_mode = 0
+albedo_color = Color(1, 0.580392, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_aknen"]
+material = SubResource("StandardMaterial3D_tgtxu")
+orientation = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ps0b"]
+shading_mode = 0
+albedo_color = Color(1, 0.0745098, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_whys2"]
+material = SubResource("StandardMaterial3D_6ps0b")
+orientation = 1
+
 [node name="Mesh Lib" type="Node3D"]
 
 [node name="Ground" type="MeshInstance3D" parent="."]
@@ -166,3 +190,18 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pillar/StaticBody3D"]
 shape = SubResource("CylinderShape3D_wv4vn")
+
+[node name="Easy" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+layers = 2
+mesh = SubResource("QuadMesh_ti2m4")
+
+[node name="Med" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+layers = 2
+mesh = SubResource("QuadMesh_aknen")
+
+[node name="Hard" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+layers = 2
+mesh = SubResource("QuadMesh_whys2")

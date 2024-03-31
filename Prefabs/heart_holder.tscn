@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch2lmb1lle2ng"]
+[gd_scene load_steps=13 format=3 uid="uid://ch2lmb1lle2ng"]
 
+[ext_resource type="Script" path="res://Prefabs/heart_holder.gd" id="1_4yasv"]
 [ext_resource type="Material" uid="uid://ct7d3rd33enfn" path="res://Materials/heart-core.tres" id="1_auiqn"]
 [ext_resource type="Material" uid="uid://bxj00t0oil2a0" path="res://Materials/heart-shell.tres" id="2_033k2"]
 
@@ -123,7 +124,70 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_iv4b8")
 
+[sub_resource type="Animation" id="Animation_fa7lj"]
+resource_name = "Float And Rotate"
+length = 10.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(6.28319, 6.28319, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.7, 0), Vector3(0, 0.675, 0), Vector3(0, 0.625, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mutf7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.675, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yhyd5"]
+_data = {
+"Float And Rotate": SubResource("Animation_fa7lj"),
+"RESET": SubResource("Animation_mutf7")
+}
+
 [node name="Heart Holder" type="Node3D"]
+script = ExtResource("1_4yasv")
 
 [node name="Center Holder" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -141,3 +205,7 @@ light_energy = 1.46
 omni_range = 0.25
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Heart"]
+libraries = {
+"": SubResource("AnimationLibrary_yhyd5")
+}
+autoplay = "Float And Rotate"
